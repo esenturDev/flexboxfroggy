@@ -87,7 +87,7 @@
 							display: flex;
 							justify-content: end;
 							position: relative;
-							top: 3.5rem;
+							top: 1.5rem;
 						}
 					}
 				}
@@ -101,15 +101,19 @@
 				padding-block: 1rem;
 				padding-inline: 2rem;
 				.Map {
-					display: flex;
-					justify-content: space-between;
+					// display: flex;
+					// justify-content: space-between;
 					.icon1 {
-						// position: relative;
-						// left: 38%;
+						position: relative;
+						// color: rgba(255, 0, 0, 0.588);
+						bottom: 8rem;
+
+						left: 79%;
 						width: 9.4rem;
 
 						border-radius: 50%;
 						height: 9.4rem;
+						// z-index: -10;
 					}
 				}
 			}

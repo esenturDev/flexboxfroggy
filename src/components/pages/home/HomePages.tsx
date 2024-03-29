@@ -385,12 +385,12 @@ export const HomePages = () => {
 	}
 
 	useEffect(() => {
-		if(inputValueResult1 === "flex-end") {
-			setButtonStyleResult(true)
+		if (inputValueResult1 === "flex-end") {
+			setButtonStyleResult(true);
 		} else {
-			setButtonStyleResult(false)
+			setButtonStyleResult(false);
 		}
-	}, [inputValueResult1])
+	}, [inputValueResult1]);
 
 	return (
 		<div className={scss.homePages}>
@@ -401,7 +401,7 @@ export const HomePages = () => {
 						<div className={scss.divHeaderButtonResult}>
 							<img onClick={() => setCount(count - 1)} src={icon} alt="icon" />
 							<p>Уровень {count} из 24</p>
-							<img  src={icon2} alt="icon" />
+							<img src={icon2} alt="icon" />
 						</div>
 					</div>
 					<div className={scss.contentsResult}>
@@ -429,20 +429,77 @@ export const HomePages = () => {
 												// onClick={() => setButtonStyleResult(true)}
 												// onClick={inputValueIsTrue}
 												onClick={() => {
-													buttonStyleResult === true ? setCount(count + 1) : null
+													buttonStyleResult === true
+														? setCount(count + 1)
+														: null;
 												}}
 												style={
 													buttonStyleResult === true
-														? { backgroundColor: "red" }
-														: { backgroundColor: "transparent" }
+														? {
+																transition: "0.5s",
+																backgroundColor: "red",
+																paddingInline: "1rem",
+																paddingBlock: "8px",
+														  }
+														: {
+																backgroundColor: "rgba(255, 0, 0, 0.588)",
+																paddingInline: "0.9rem",
+																paddingBlock: "7px",
+																border: "nome",
+														  }
+													// {border: "no"}
 												}>
 												Далее
 											</button>
-											{buttonStyleResult === true ? (
-												<p style={{ color: "black" }}>Hello</p>
-											) : (
-												<p>Error</p>
-											)}
+										</div>
+									</div>
+								</>
+							) : null}
+							{result2 ? (
+								<>
+									<p>{resultIndex2.name}</p>
+									<p>{resultIndex2.text}</p>
+									{/* <p>{resultIndex2.nameText}</p> */}
+									<div className={scss.formsResults}>
+										<p className={scss.p}>{resultIndex2.result1}</p>
+										<p className={scss.p}>{resultIndex2.result2}</p>
+										<div className={scss.divForm}>
+											<p className={scss.textIsInputLabel}>
+												justify-content{" "}
+												<input
+													value={inputValueResult1}
+													type="text"
+													onChange={(e) => setInputValueResult1(e.target.value)}
+												/>
+											</p>
+										</div>
+										<div className={scss.buttonDev}>
+											<button
+												// onClick={() => setButtonStyleResult(true)}
+												// onClick={inputValueIsTrue}
+												onClick={() => {
+													buttonStyleResult === true
+														? setCount(count + 1)
+														: null;
+												}}
+												style={
+													buttonStyleResult === true
+														? {
+																transition: "0.5s",
+																backgroundColor: "red",
+																paddingInline: "1rem",
+																paddingBlock: "8px",
+														  }
+														: {
+																backgroundColor: "rgba(255, 0, 0, 0.588)",
+																paddingInline: "0.9rem",
+																paddingBlock: "7px",
+																border: "nome",
+														  }
+													// {border: "no"}
+												}>
+												Далее
+											</button>
 										</div>
 									</div>
 								</>
@@ -455,20 +512,77 @@ export const HomePages = () => {
 						<div className={scss.Map}>
 							{result1 === true ? (
 								<>
-									<img
+									<div
 										style={{
-											width: "9rem",
-											height: "9rem",
 											display: "flex",
 											justifyContent: inputValueResult1,
-										}}
-										className={scss.img1}
-										src={resultIndex.img1}
-										alt="img1"
-									/>
+										}}>
+										<img
+											style={{
+												width: "9rem",
+												height: "9rem",
+												position: "relative",
+												zIndex: "2",
+												// display: "flex",
+
+												// justifyContent: inputValueResult1,
+											}}
+											className={scss.img1}
+											src={resultIndex.img1}
+											alt="img1"
+										/>
+									</div>
 									<img
 										className={scss.icon1}
 										src={resultIndex.icon1}
+										alt="icon1"
+									/>
+								</>
+							) : null}
+							{result2 === true ? (
+								<>
+									<div
+										style={{
+											display: "flex",
+											justifyContent: inputValueResult1,
+										}}>
+										<img
+											style={{
+												width: "9rem",
+												height: "9rem",
+												position: "relative",
+												zIndex: "2",
+												// display: "flex",
+
+												// justifyContent: inputValueResult1,
+											}}
+											className={scss.img1}
+											src={resultIndex2.img1}
+											alt="img1"
+										/>
+										<img
+											style={{
+												width: "9rem",
+												height: "9rem",
+												position: "relative",
+												zIndex: "2",
+												// display: "flex",
+
+												// justifyContent: inputValueResult1,
+											}}
+											className={scss.img1}
+											src={resultIndex2.img2}
+											alt="img1"
+										/>
+									</div>
+									<img
+										className={scss.icon1}
+										src={resultIndex2.icon1}
+										alt="icon1"
+									/>
+									<img
+										className={scss.icon1}
+										src={resultIndex2.icon2}
 										alt="icon1"
 									/>
 								</>
