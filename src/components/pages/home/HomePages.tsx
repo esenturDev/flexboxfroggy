@@ -43,14 +43,15 @@ export const HomePages = () => {
 				result1: "#pond {",
 				result2: "display: flex;",
 				result3: "}",
-        img1: "https://flexboxfroggy.com/favicon.ico",
+				img1: "https://flexboxfroggy.com/favicon.ico",
 				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
-        img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
 				icon1:
 					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
 				icon2:
 					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
-          icon3: "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
 				isResult: false,
 			},
 		],
@@ -61,14 +62,15 @@ export const HomePages = () => {
 				result1: "#pond {",
 				result2: "display: flex;",
 				result3: "}",
-        img1: "https://flexboxfroggy.com/favicon.ico",
+				img1: "https://flexboxfroggy.com/favicon.ico",
 				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
-        img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
 				icon1:
 					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
 				icon2:
 					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
-          icon3: "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
 				isResult: false,
 			},
 		],
@@ -76,18 +78,19 @@ export const HomePages = () => {
 			{
 				id: 5,
 				name: "Теперь используй align-items, чтобы помочь лягушатам добраться до нижней части пруда. Это свойство CSS выравнивает элементы вертикально и принимает следующие значения:",
-        text: "flex-start: элементы выравниваются по верхнему краю контейнера. flex-end: элементы выравниваются по нижнему краю контейнера. center: элементы выравниваются вертикально по центру контейнера. baseline: элементы отображаются на базовой линии контейнера. stretch: элементы растягиваются, чтобы заполнить контейнер.",
+				text: "flex-start: элементы выравниваются по верхнему краю контейнера. flex-end: элементы выравниваются по нижнему краю контейнера. center: элементы выравниваются вертикально по центру контейнера. baseline: элементы отображаются на базовой линии контейнера. stretch: элементы растягиваются, чтобы заполнить контейнер.",
 				result1: "#pond {",
 				result2: "display: flex;",
 				result3: "}",
-        img1: "https://flexboxfroggy.com/favicon.ico",
+				img1: "https://flexboxfroggy.com/favicon.ico",
 				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
-        img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
 				icon1:
 					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
 				icon2:
 					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
-          icon3: "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
 				isResult: false,
 			},
 		],
@@ -95,11 +98,11 @@ export const HomePages = () => {
 			{
 				id: 6,
 				name: "Направь лягушонка в центр пруда, используя justify-content и align-items вместе.",
-        text: "flex-start: элементы выравниваются по верхнему краю контейнера. flex-end: элементы выравниваются по нижнему краю контейнера. center: элементы выравниваются вертикально по центру контейнера. baseline: элементы отображаются на базовой линии контейнера. stretch: элементы растягиваются, чтобы заполнить контейнер.",
+				text: "flex-start: элементы выравниваются по верхнему краю контейнера. flex-end: элементы выравниваются по нижнему краю контейнера. center: элементы выравниваются вертикально по центру контейнера. baseline: элементы отображаются на базовой линии контейнера. stretch: элементы растягиваются, чтобы заполнить контейнер.",
 				result1: "#pond {",
 				result2: "display: flex;",
 				result3: "}",
-        img1: "https://flexboxfroggy.com/favicon.ico",
+				img1: "https://flexboxfroggy.com/favicon.ico",
 				icon1:
 					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
 				isResult: false,
@@ -109,18 +112,19 @@ export const HomePages = () => {
 			{
 				id: 7,
 				name: "Лягушатам снова нужно пересечь пруд. В этот раз к лилиям, с достаточно большим пространством вокруг них. Используй комбинацию justify-content и align-items.",
-        text: "flex-start: элементы выравниваются по верхнему краю контейнера. flex-end: элементы выравниваются по нижнему краю контейнера. center: элементы выравниваются вертикально по центру контейнера. baseline: элементы отображаются на базовой линии контейнера. stretch: элементы растягиваются, чтобы заполнить контейнер.",
+				text: "flex-start: элементы выравниваются по верхнему краю контейнера. flex-end: элементы выравниваются по нижнему краю контейнера. center: элементы выравниваются вертикально по центру контейнера. baseline: элементы отображаются на базовой линии контейнера. stretch: элементы растягиваются, чтобы заполнить контейнер.",
 				result1: "#pond {",
 				result2: "display: flex;",
 				result3: "}",
-        img1: "https://flexboxfroggy.com/favicon.ico",
+				img1: "https://flexboxfroggy.com/favicon.ico",
 				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
-        img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
 				icon1:
 					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
 				icon2:
 					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
-          icon3: "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
 				isResult: false,
 			},
 		],
@@ -128,18 +132,19 @@ export const HomePages = () => {
 			{
 				id: 8,
 				name: "Лягушатам нужно выстроиться в том же порядке, что и лилии, используя flex-direction. Это свойство CSS задает направление, в котором будут расположены элементы в контейнере, и принимает следующие значения:",
-        text: "row: элементы размещаются по направлению текста. row-reverse: элементы отображаются в обратном порядке к направлению текста. column: элементы располагаются сверху вниз. column-reverse: элементы располагаются снизу вверх.",
+				text: "row: элементы размещаются по направлению текста. row-reverse: элементы отображаются в обратном порядке к направлению текста. column: элементы располагаются сверху вниз. column-reverse: элементы располагаются снизу вверх.",
 				result1: "#pond {",
 				result2: "display: flex;",
 				result3: "}",
-        img1: "https://flexboxfroggy.com/favicon.ico",
+				img1: "https://flexboxfroggy.com/favicon.ico",
 				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
-        img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
 				icon1:
 					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
 				icon2:
 					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
-          icon3: "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
 				isResult: false,
 			},
 		],
@@ -147,18 +152,19 @@ export const HomePages = () => {
 			{
 				id: 9,
 				name: "Помоги лягушатам расположиться на своих лилиях, используя flex-direction. Это свойство CSS задает направление, в котором располагаются элементы в контейнере, и принимает следующие значения:",
-        text: "row: элементы размещаются по направлению текста. row-reverse: элементы отображаются в обратном порядке к направлению текста. column: элементы распологаются сверху вниз. column-reverse: элементы распологаются снизу вверх.",
+				text: "row: элементы размещаются по направлению текста. row-reverse: элементы отображаются в обратном порядке к направлению текста. column: элементы распологаются сверху вниз. column-reverse: элементы распологаются снизу вверх.",
 				result1: "#pond {",
 				result2: "display: flex;",
 				result3: "}",
-        img1: "https://flexboxfroggy.com/favicon.ico",
+				img1: "https://flexboxfroggy.com/favicon.ico",
 				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
-        img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
 				icon1:
 					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
 				icon2:
 					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
-          icon3: "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
 				isResult: false,
 			},
 		],
@@ -166,18 +172,126 @@ export const HomePages = () => {
 			{
 				id: 10,
 				name: "Помоги лягушатам попасть на свои лилии. Хоть и кажется, что они почти на своих местах, всё же придётся применить и flex-direction, и justify-content, чтобы поместить их на свои лилии.",
-        text: "Заметь, что когда ты устанавливаешь направление в обратном порядке для ряда или колонки, начало (start) и конец (end) тоже меняются местами.",
+				text: "Заметь, что когда ты устанавливаешь направление в обратном порядке для ряда или колонки, начало (start) и конец (end) тоже меняются местами.",
 				result1: "#pond {",
 				result2: "display: flex;",
 				result3: "}",
-        img1: "https://flexboxfroggy.com/favicon.ico",
+				img1: "https://flexboxfroggy.com/favicon.ico",
 				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
-        img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
 				icon1:
 					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
 				icon2:
 					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
-          icon3: "https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				isResult: false,
+			},
+		],
+		[
+			{
+				id: 11,
+				name: "Помоги лягушатам найти их лилии с помощью flex-direction и justify-content.",
+				text: "Заметь, когда в качестве направления выбрана колонка, то justify-content влияет на вертикальное выравнивание, а align-items — на горизонтальное.",
+				result1: "#pond {",
+				result2: "display: flex;",
+				result3: "}",
+				img1: "https://flexboxfroggy.com/favicon.ico",
+				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				icon1:
+					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+				icon2:
+					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				isResult: false,
+			},
+		],
+		[
+			{
+				id: 12,
+				name: "Помоги лягушатам найти их лилии с помощью flex-direction и justify-content.",
+				result1: "#pond {",
+				result2: "display: flex;",
+				result3: "}",
+				img1: "https://flexboxfroggy.com/favicon.ico",
+				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				icon1:
+					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+				icon2:
+					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				isResult: false,
+			},
+		],
+		[
+			{
+				id: 13,
+				name: "Помоги лягушатам найти их лилии с помощью flex-direction, justify-content и align-items.",
+				result1: "#pond {",
+				result2: "display: flex;",
+				result3: "}",
+				img1: "https://flexboxfroggy.com/favicon.ico",
+				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				icon1:
+					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+				icon2:
+					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				isResult: false,
+			},
+		],
+		[
+			{
+				id: 14,
+				name: "Иногда изменения порядка отображения элементов в контейнере недостаточно. В таких случаях мы можем применить свойство order для конкретных элементов. По умолчанию, значение этого свойства у элементов равно 0, но мы можем задать положительное или отрицательное целое число этому свойству.",
+				text: "Используй свойство order, чтобы разместить лягушат на своих лилиях.",
+				result1: "#pond {",
+				result2: "display: flex;",
+				result3: "}",
+				result11: ".yellow {",
+				result22: "}",
+				img1: "https://flexboxfroggy.com/favicon.ico",
+				img2: "https://i.pinimg.com/originals/17/c5/45/17c545d994ff3fec519c9e2b522da4c3.jpg",
+				img3: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				icon1:
+					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+				icon2:
+					"https://upload.wikimedia.org/wikipedia/commons/d/d0/Color-yellow.JPG",
+				icon3:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
+				isResult: false,
+			},
+		],
+		[
+			{
+				id: 15,
+				name: "Используй свойство order, чтобы отправить красного лягушонка на его лилию.",
+				result1: "#pond {",
+				result2: "display: flex;",
+				result3: "}",
+				result11: ".red {",
+				result22: "}",
+				img1: "https://flexboxfroggy.com/favicon.ico",
+				img2: "https://flexboxfroggy.com/favicon.ico",
+				img3: "https://flexboxfroggy.com/favicon.ico",
+				img4: "https://flexboxfroggy.com/favicon.ico",
+				img5: "https://c8.alamy.com/comp/2M6NX8Y/poison-dart-frog-animal-character-cartoon-illustration-2M6NX8Y.jpg",
+				icon1:
+					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+				icon2:
+					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+				icon3:
+					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+				icon4:
+					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+				icon5:
+					"https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png",
 				isResult: false,
 			},
 		],
