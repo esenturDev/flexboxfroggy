@@ -32,6 +32,33 @@
 					}
 				}
 			}
+			.divLevel {
+				position: absolute;
+				left: 35rem;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+				border-radius: 7px;
+				width: 148px;
+				height: auto;
+				padding-inline: 8px;
+				padding-block: 8px;
+				background-color: rgb(28, 64, 207);
+
+				div {
+					border-radius: 50%;
+					height: 25px;
+					width: 25px;
+					color: #fff;
+					font-weight: 320;
+					font-size: 10px;
+					background-color: green;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+				}
+			}
 			.contentsResult {
 				display: flex;
 

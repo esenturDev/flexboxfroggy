@@ -312,6 +312,7 @@ export const HomePages = () => {
 	const [inputValueResult1, setInputValueResult1] = useState<string>("");
 	const [inputValueResult2, setInputValueResult2] = useState<string>("");
 	const [inputValueResult3, setInputValueResult3] = useState<string>("");
+	const [openDiv, setOpenDiv] = useState<boolean>(false);
 	const result = LevelArray.slice(0, 8);
 	console.log(result);
 
@@ -401,6 +402,14 @@ export const HomePages = () => {
 		}
 	}, [inputValueResult3]);
 
+	function countMinues() {
+		if (count === 1) {
+			setCount(1);
+		} else {
+			setCount(count - 1);
+		}
+	}
+
 	return (
 		<div className={scss.homePages}>
 			<div className={scss.content}>
@@ -408,11 +417,185 @@ export const HomePages = () => {
 					<div className={scss.divHeader}>
 						<h2>FLEXBOX FROGGY</h2>
 						<div className={scss.divHeaderButtonResult}>
-							<img onClick={() => setCount(count - 1)} src={icon} alt="icon" />
-							<p>Уровень {count} из 24</p>
+							<img onClick={countMinues} src={icon} alt="icon" />
+							<p onClick={() => setOpenDiv(true)}>Уровень {count} из 24</p>
 							<img src={icon2} alt="icon" />
 						</div>
 					</div>
+					{openDiv ? (
+						<>
+							<div className={scss.divLevel}>
+								<div
+									onClick={() => {
+										setCount(1);
+										setOpenDiv(false);
+									}}>
+									1
+								</div>
+								<div
+									onClick={() => {
+										setCount(2);
+										setOpenDiv(false);
+									}}>
+									2
+								</div>
+								<div
+									onClick={() => {
+										setCount(3);
+										setOpenDiv(false);
+									}}>
+									3
+								</div>
+								<div
+									onClick={() => {
+										setCount(4);
+										setOpenDiv(false);
+									}}>
+									4
+								</div>
+								<div
+									onClick={() => {
+										setCount(5);
+										setOpenDiv(false);
+									}}>
+									5
+								</div>
+								<div
+									onClick={() => {
+										setCount(6);
+										setOpenDiv(false);
+									}}>
+									6
+								</div>
+								<div
+									onClick={() => {
+										setCount(7);
+										setOpenDiv(false);
+									}}>
+									7
+								</div>
+								<div
+									onClick={() => {
+										setCount(8);
+										setOpenDiv(false);
+									}}>
+									8
+								</div>
+								<div
+									onClick={() => {
+										setCount(9);
+										setOpenDiv(false);
+									}}>
+									9
+								</div>
+								<div
+									onClick={() => {
+										setCount(10);
+										setOpenDiv(false);
+									}}>
+									10
+								</div>
+								<div
+									onClick={() => {
+										setCount(11);
+										setOpenDiv(false);
+									}}>
+									11
+								</div>
+								<div
+									onClick={() => {
+										setCount(12);
+										setOpenDiv(false);
+									}}>
+									12
+								</div>
+								<div
+									onClick={() => {
+										setCount(13);
+										setOpenDiv(false);
+									}}>
+									13
+								</div>
+								<div
+									onClick={() => {
+										setCount(14);
+										setOpenDiv(false);
+									}}>
+									14
+								</div>
+								<div
+									onClick={() => {
+										setCount(15);
+										setOpenDiv(false);
+									}}>
+									15
+								</div>
+								<div
+									onClick={() => {
+										setCount(16);
+										setOpenDiv(false);
+									}}>
+									16
+								</div>
+								<div
+									onClick={() => {
+										setCount(17);
+										setOpenDiv(false);
+									}}>
+									17
+								</div>
+								<div
+									onClick={() => {
+										setCount(18);
+										setOpenDiv(false);
+									}}>
+									18
+								</div>
+								<div
+									onClick={() => {
+										setCount(19);
+										setOpenDiv(false);
+									}}>
+									19
+								</div>
+								<div
+									onClick={() => {
+										setCount(20);
+										setOpenDiv(false);
+									}}>
+									20
+								</div>
+								<div
+									onClick={() => {
+										setCount(21);
+										setOpenDiv(false);
+									}}>
+									21
+								</div>
+								<div
+									onClick={() => {
+										setCount(22);
+										setOpenDiv(false);
+									}}>
+									22
+								</div>
+								<div
+									onClick={() => {
+										setCount(23);
+										setOpenDiv(false);
+									}}>
+									23
+								</div>
+								<div
+									onClick={() => {
+										setCount(24);
+										setOpenDiv(false);
+									}}>
+									24
+								</div>
+							</div>
+						</>
+					) : null}
 					<div className={scss.contentsResult}>
 						<div className={scss.divLebal}>
 							{result1 ? (
@@ -449,13 +632,13 @@ export const HomePages = () => {
 																backgroundColor: "red",
 																paddingInline: "1rem",
 																paddingBlock: "8px",
-														}
+														  }
 														: {
 																backgroundColor: "rgba(255, 0, 0, 0.588)",
 																paddingInline: "0.9rem",
 																paddingBlock: "7px",
 																border: "nome",
-														}
+														  }
 													// {border: "no"}
 												}>
 												Далее
@@ -498,13 +681,13 @@ export const HomePages = () => {
 																backgroundColor: "red",
 																paddingInline: "1rem",
 																paddingBlock: "8px",
-														}
+														  }
 														: {
 																backgroundColor: "rgba(255, 0, 0, 0.588)",
 																paddingInline: "0.9rem",
 																paddingBlock: "7px",
 																border: "nome",
-														}
+														  }
 													// {border: "no"}
 												}>
 												Далее
@@ -548,13 +731,13 @@ export const HomePages = () => {
 																backgroundColor: "red",
 																paddingInline: "1rem",
 																paddingBlock: "8px",
-														}
+														  }
 														: {
 																backgroundColor: "rgba(255, 0, 0, 0.588)",
 																paddingInline: "0.9rem",
 																paddingBlock: "7px",
 																border: "nome",
-														}
+														  }
 													// {border: "no"}
 												}>
 												Далее
@@ -720,44 +903,53 @@ export const HomePages = () => {
 											alt="img1"
 										/>
 									</div>
-									<img
+									<div
 										style={{
+											display: "flex",
+											justifyContent: "space-evenly",
 											position: "relative",
-											bottom: "8rem",
-											left: "12rem",
-											width: "9.4rem",
-											height: "9.4rem",
-											borderRadius: "50%",
-										}}
-										src={resultIndex3.icon1}
-										alt="icon1"
-									/>
-									<img
-										// className={scss.icon1}
-										style={{
-											position: "relative",
-											bottom: "8rem",
-											left: "12rem",
-											width: "9.4rem",
-											height: "9.4rem",
-											borderRadius: "50%",
-										}}
-										src={resultIndex3.icon2}
-										alt="icon1"
-									/>
-									<img
-										// className={scss.icon1}
-										style={{
-											position: "relative",
-											bottom: "8rem",
-											left: "12rem",
-											width: "9.4rem",
-											height: "9.4rem",
-											borderRadius: "50%",
-										}}
-										src={resultIndex3.icon3}
-										alt="icon1"
-									/>
+											top: "-1rem",
+											right: "13rem",
+										}}>
+										<img
+											style={{
+												position: "relative",
+												bottom: "8rem",
+												left: "12rem",
+												width: "9.4rem",
+												height: "9.4rem",
+												borderRadius: "50%",
+											}}
+											src={resultIndex3.icon1}
+											alt="icon1"
+										/>
+										<img
+											// className={scss.icon1}
+											style={{
+												position: "relative",
+												bottom: "8rem",
+												left: "12rem",
+												width: "9.4rem",
+												height: "9.4rem",
+												borderRadius: "50%",
+											}}
+											src={resultIndex3.icon2}
+											alt="icon1"
+										/>
+										<img
+											// className={scss.icon1}
+											style={{
+												position: "relative",
+												bottom: "8rem",
+												left: "12rem",
+												width: "9.4rem",
+												height: "9.4rem",
+												borderRadius: "50%",
+											}}
+											src={resultIndex3.icon3}
+											alt="icon1"
+										/>
+									</div>
 								</>
 							) : null}
 						</div>
