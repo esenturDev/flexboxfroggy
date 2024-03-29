@@ -1,5 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import icon from "../../../assets/skip-left-fill.svg";
+import icon2 from "../../../assets/skip-right-fill.svg";
 import scss from "./HomePages.module.scss";
+import { Input } from "../../Ul/input/Input";
+import Button from "../../Ul/button/Button";
+
 export const HomePages = () => {
 	const LevelArray = [
 		[
@@ -18,6 +23,7 @@ export const HomePages = () => {
 				isResult: false,
 			},
 		],
+
 		[
 			{
 				id: 2,
@@ -35,6 +41,7 @@ export const HomePages = () => {
 				isResult: false,
 			},
 		],
+
 		[
 			{
 				id: 3,
@@ -296,12 +303,95 @@ export const HomePages = () => {
 			},
 		],
 	];
-	const [count, setCount] = useState();
+	const [count, setCount] = useState<number>(1);
+	const [result1, setResult1] = useState<boolean>(false);
+	const [result2, setResult2] = useState<boolean>(false);
+	const [result3, setResult3] = useState<boolean>(false);
+	const [result4, setResult4] = useState<boolean>(false);
+	const [inputValueResult1, setInputValueResult1] = useState<string>("");
+	const result = LevelArray.slice(0, 8);
+	console.log(result);
+
+	const resultIndex = result[0][0];
+	const resultIndex2 = result[1][0];
+	const resultIndex3 = result[2][0];
+	console.log(resultIndex);
+
+	console.log(resultIndex2);
+
+	useEffect(() => {
+		if (count === 1) {
+			setResult1(true);
+			setResult2(false);
+			setResult3(false);
+			setResult4(false);
+		} else if (count === 2) {
+			setResult2(true);
+			setResult1(false);
+			setResult3(false);
+			setResult4(false);
+		} else if (count === 3) {
+			setResult3(true);
+			setResult1(false);
+			setResult2(false);
+			setResult4(false);
+		} else if (count === 4) {
+			setResult4(true);
+			setResult1(false);
+			setResult2(false);
+			setResult3(false);
+		}
+	}, [count]);
+
 	return (
 		<div className={scss.homePages}>
 			<div className={scss.content}>
-				<div className={scss.div1}></div>
-				<div className={scss.div2}></div>
+				<div className={scss.div1}>
+					<div className={scss.divHeader}>
+						<h2>FLEXBOX FROGGY</h2>
+						<div className={scss.divHeaderButtonResult}>
+							<img onClick={() => setCount(count - 1)} src={icon} alt="icon" />
+							<p>Уровень {count} из 24</p>
+							<img onClick={() => setCount(count + 1)} src={icon2} alt="icon" />
+						</div>
+					</div>
+					<div>
+						<div>
+							{result1 ? (
+								<>
+									<p>{resultIndex.name}</p>
+									<p>{resultIndex.text}</p>
+									<p>{resultIndex.nameText}</p>
+									<div>
+										<p>{resultIndex.result1}</p>
+										<p>{resultIndex.result2}</p>
+										<p>
+											justify-content{" "}
+											<Input
+												value={inputValueResult1}
+												type="text"
+												setData={setInputValueResult1}
+											/>
+										</p>
+										<Button>Далее</Button>
+									</div>
+								</>
+							) : null}
+						</div>
+					</div>
+				</div>
+				<div className={scss.div2}>
+					<div>
+						<div>
+							{result1 === true ? (
+								<>
+									<img src={resultIndex.img1} alt="img1" />
+									<img src={resultIndex.icon1} alt="icon1" />
+								</>
+							) : null}
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
