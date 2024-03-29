@@ -343,6 +343,14 @@ export const HomePages = () => {
 		}
 	}, [count]);
 
+	useEffect(() => {
+		if (inputValueResult1 === "flex-end") {
+			resultIndex.isResult === true;
+		} else {
+			resultIndex.isResult === false;
+		}
+	}, [inputValueResult1]);
+
 	return (
 		<div className={scss.homePages}>
 			<div className={scss.content}>
@@ -366,19 +374,27 @@ export const HomePages = () => {
 										<p className={scss.p}>{resultIndex.result1}</p>
 										<p className={scss.p}>{resultIndex.result2}</p>
 										<div className={scss.divForm}>
-
-										<p className={scss.textIsInputLabel}>
-											justify-content{" "}
-											<Input
-												value={inputValueResult1}
-												type="text"
-												setData={setInputValueResult1}
-											/>
-										</p>
+											<p className={scss.textIsInputLabel}>
+												justify-content{" "}
+												<Input
+													value={inputValueResult1}
+													type="text"
+													setData={setInputValueResult1}
+												/>
+											</p>
 										</div>
 										<div className={scss.buttonDev}>
-
-										<Button>Далее</Button>
+											<button
+												style={
+													resultIndex.isResult === true
+														? { backgroundColor: "red" }
+														: { backgroundColor: "transparent" }
+												}>
+												Далее
+											</button>
+											{resultIndex.isResult === true ? (
+												<p style={{ color: "black" }}>Hello</p>
+											) : null}
 										</div>
 									</div>
 								</>
@@ -391,9 +407,19 @@ export const HomePages = () => {
 						<div className={scss.Map}>
 							{result1 === true ? (
 								<>
-									<img src={resultIndex.img1} alt="img1" />
 									<img
-										style={{ textAlign: "end" }}
+										style={{
+											width: "9rem",
+											height: "9rem",
+											display: "flex",
+											justifyContent: inputValueResult1,
+										}}
+										className={scss.img1}
+										src={resultIndex.img1}
+										alt="img1"
+									/>
+									<img
+										className={scss.icon1}
 										src={resultIndex.icon1}
 										alt="icon1"
 									/>

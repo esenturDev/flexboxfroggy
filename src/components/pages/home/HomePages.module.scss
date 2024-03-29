@@ -100,7 +100,18 @@
 			.divDispleyResult {
 				padding-block: 1rem;
 				padding-inline: 2rem;
-				
+				.Map {
+					display: flex;
+					justify-content: space-between;
+					.icon1 {
+						// position: relative;
+						// left: 38%;
+						width: 9.4rem;
+
+						border-radius: 50%;
+						height: 9.4rem;
+					}
+				}
 			}
 		}
 	}
