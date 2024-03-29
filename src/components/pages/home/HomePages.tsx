@@ -310,6 +310,8 @@ export const HomePages = () => {
 	const [result4, setResult4] = useState<boolean>(false);
 	const [buttonStyleResult, setButtonStyleResult] = useState<boolean>(false);
 	const [inputValueResult1, setInputValueResult1] = useState<string>("");
+	const [inputValueResult2, setInputValueResult2] = useState<string>("");
+	const [inputValueResult3, setInputValueResult3] = useState<string>("");
 	const result = LevelArray.slice(0, 8);
 	console.log(result);
 
@@ -343,14 +345,6 @@ export const HomePages = () => {
 			setResult3(false);
 		}
 	}, [count]);
-
-	const inputValueIsTrue = () => {
-		if (inputValueResult1 === "flex-end") {
-			setButtonStyleResult(true);
-		} else {
-			setButtonStyleResult(false);
-		}
-	};
 
 	// function buttonStyle() {
 
@@ -391,6 +385,21 @@ export const HomePages = () => {
 			setButtonStyleResult(false);
 		}
 	}, [inputValueResult1]);
+	useEffect(() => {
+		if (inputValueResult2 === "center") {
+			setButtonStyleResult(true);
+		} else {
+			setButtonStyleResult(false);
+		}
+	}, [inputValueResult2]);
+
+	useEffect(() => {
+		if (inputValueResult3 === "space-around") {
+			setButtonStyleResult(true);
+		} else {
+			setButtonStyleResult(false);
+		}
+	}, [inputValueResult3]);
 
 	return (
 		<div className={scss.homePages}>
@@ -440,13 +449,13 @@ export const HomePages = () => {
 																backgroundColor: "red",
 																paddingInline: "1rem",
 																paddingBlock: "8px",
-														  }
+														}
 														: {
 																backgroundColor: "rgba(255, 0, 0, 0.588)",
 																paddingInline: "0.9rem",
 																paddingBlock: "7px",
 																border: "nome",
-														  }
+														}
 													// {border: "no"}
 												}>
 												Далее
@@ -466,10 +475,10 @@ export const HomePages = () => {
 										<div className={scss.divForm}>
 											<p className={scss.textIsInputLabel}>
 												justify-content{" "}
-												<input
-													value={inputValueResult1}
+												<Input
+													value={inputValueResult2}
 													type="text"
-													onChange={(e) => setInputValueResult1(e.target.value)}
+													setData={setInputValueResult2}
 												/>
 											</p>
 										</div>
@@ -489,13 +498,63 @@ export const HomePages = () => {
 																backgroundColor: "red",
 																paddingInline: "1rem",
 																paddingBlock: "8px",
-														  }
+														}
 														: {
 																backgroundColor: "rgba(255, 0, 0, 0.588)",
 																paddingInline: "0.9rem",
 																paddingBlock: "7px",
 																border: "nome",
-														  }
+														}
+													// {border: "no"}
+												}>
+												Далее
+											</button>
+										</div>
+									</div>
+								</>
+							) : null}
+							{result3 ? (
+								<>
+									<p>{resultIndex3.name}</p>
+									<p>{resultIndex3.text}</p>
+									{/* <p>{resultIndex2.nameText}</p> */}
+									<div className={scss.formsResults}>
+										<p className={scss.p}>{resultIndex3.result1}</p>
+										<p className={scss.p}>{resultIndex3.result2}</p>
+										<div className={scss.divForm}>
+											<p className={scss.textIsInputLabel}>
+												justify-content{" "}
+												<Input
+													value={inputValueResult3}
+													type="text"
+													setData={setInputValueResult3}
+												/>
+											</p>
+										</div>
+										<p className={scss.p}>{resultIndex3.result3}</p>
+										<div className={scss.buttonDev}>
+											<button
+												// onClick={() => setButtonStyleResult(true)}
+												// onClick={inputValueIsTrue}
+												onClick={() => {
+													buttonStyleResult === true
+														? setCount(count + 1)
+														: null;
+												}}
+												style={
+													buttonStyleResult === true
+														? {
+																transition: "0.5s",
+																backgroundColor: "red",
+																paddingInline: "1rem",
+																paddingBlock: "8px",
+														}
+														: {
+																backgroundColor: "rgba(255, 0, 0, 0.588)",
+																paddingInline: "0.9rem",
+																paddingBlock: "7px",
+																border: "nome",
+														}
 													// {border: "no"}
 												}>
 												Далее
@@ -544,13 +603,16 @@ export const HomePages = () => {
 									<div
 										style={{
 											display: "flex",
-											justifyContent: inputValueResult1,
+											justifyContent: inputValueResult2,
+											// flexDirection: "row-reverse",
 										}}>
 										<img
 											style={{
 												width: "9rem",
 												height: "9rem",
 												position: "relative",
+												// left: "-36rem",
+												right: "1rem",
 												zIndex: "2",
 												// display: "flex",
 
@@ -565,9 +627,10 @@ export const HomePages = () => {
 												width: "9rem",
 												height: "9rem",
 												position: "relative",
+												right: "1rem",
 												zIndex: "2",
+												borderRadius: "50%",
 												// display: "flex",
-
 												// justifyContent: inputValueResult1,
 											}}
 											className={scss.img1}
@@ -576,13 +639,123 @@ export const HomePages = () => {
 										/>
 									</div>
 									<img
-										className={scss.icon1}
+										style={{
+											position: "relative",
+											bottom: "8rem",
+											left: "12rem",
+											width: "9.4rem",
+											height: "9.4rem",
+											borderRadius: "50%",
+										}}
 										src={resultIndex2.icon1}
 										alt="icon1"
 									/>
 									<img
-										className={scss.icon1}
+										// className={scss.icon1}
+										style={{
+											position: "relative",
+											bottom: "8rem",
+											left: "12rem",
+											width: "9.4rem",
+											height: "9.4rem",
+											borderRadius: "50%",
+										}}
 										src={resultIndex2.icon2}
+										alt="icon1"
+									/>
+								</>
+							) : null}
+							{result3 === true ? (
+								<>
+									<div
+										style={{
+											display: "flex",
+											justifyContent: inputValueResult3,
+											// flexDirection: "row-reverse",
+										}}>
+										<img
+											style={{
+												width: "9rem",
+												height: "9rem",
+												position: "relative",
+												// left: "-36rem",
+												right: "1rem",
+												zIndex: "2",
+												// display: "flex",
+
+												// justifyContent: inputValueResult1,
+											}}
+											className={scss.img1}
+											src={resultIndex3.img1}
+											alt="img1"
+										/>
+										<img
+											style={{
+												width: "9rem",
+												height: "9rem",
+												position: "relative",
+												right: "1rem",
+												zIndex: "2",
+												borderRadius: "50%",
+												// display: "flex",
+												// justifyContent: inputValueResult1,
+											}}
+											className={scss.img1}
+											src={resultIndex3.img2}
+											alt="img1"
+										/>
+										<img
+											style={{
+												width: "9rem",
+												height: "9rem",
+												position: "relative",
+												right: "1rem",
+												zIndex: "2",
+												borderRadius: "50%",
+												// display: "flex",
+												// justifyContent: inputValueResult1,
+											}}
+											className={scss.img1}
+											src={resultIndex3.img3}
+											alt="img1"
+										/>
+									</div>
+									<img
+										style={{
+											position: "relative",
+											bottom: "8rem",
+											left: "12rem",
+											width: "9.4rem",
+											height: "9.4rem",
+											borderRadius: "50%",
+										}}
+										src={resultIndex3.icon1}
+										alt="icon1"
+									/>
+									<img
+										// className={scss.icon1}
+										style={{
+											position: "relative",
+											bottom: "8rem",
+											left: "12rem",
+											width: "9.4rem",
+											height: "9.4rem",
+											borderRadius: "50%",
+										}}
+										src={resultIndex3.icon2}
+										alt="icon1"
+									/>
+									<img
+										// className={scss.icon1}
+										style={{
+											position: "relative",
+											bottom: "8rem",
+											left: "12rem",
+											width: "9.4rem",
+											height: "9.4rem",
+											borderRadius: "50%",
+										}}
+										src={resultIndex3.icon3}
 										alt="icon1"
 									/>
 								</>
