@@ -363,9 +363,11 @@ export const HomePages = () => {
 									<p>{resultIndex.text}</p>
 									<p>{resultIndex.nameText}</p>
 									<div className={scss.formsResults}>
-										<p>{resultIndex.result1}</p>
-										<p>{resultIndex.result2}</p>
-										<p>
+										<p className={scss.p}>{resultIndex.result1}</p>
+										<p className={scss.p}>{resultIndex.result2}</p>
+										<div className={scss.divForm}>
+
+										<p className={scss.textIsInputLabel}>
 											justify-content{" "}
 											<Input
 												value={inputValueResult1}
@@ -373,7 +375,11 @@ export const HomePages = () => {
 												setData={setInputValueResult1}
 											/>
 										</p>
+										</div>
+										<div className={scss.buttonDev}>
+
 										<Button>Далее</Button>
+										</div>
 									</div>
 								</>
 							) : null}
@@ -381,8 +387,8 @@ export const HomePages = () => {
 					</div>
 				</div>
 				<div className={scss.div2}>
-					<div>
-						<div>
+					<div className={scss.divDispleyResult}>
+						<div className={scss.Map}>
 							{result1 === true ? (
 								<>
 									<img src={resultIndex.img1} alt="img1" />
