@@ -32,6 +32,36 @@
 					}
 				}
 			}
+			.contentsResult {
+				display: flex;
+
+				// justify-content: center;
+
+				padding-inline: 1rem;
+				padding-block: 1rem;
+				.divLebal {
+					display: flex;
+					flex-direction: column;
+					align-items: start;
+					gap: 2rem;
+					p {
+						font-size: 17px;
+						font-weight: 500;
+						color: aliceblue;
+					}
+					.formsResults {
+						display: flex;
+						flex-direction: column;
+						align-items: start;
+						padding-block: 14px;
+						padding-inline: 14px;
+						border-radius: 12px;
+						background-color: #a79595;
+						width: 100%;
+						height: 200px;
+					}
+				}
+			}
 		}
 		.div2 {
 			width: 100%;

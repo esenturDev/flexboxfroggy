@@ -19,7 +19,7 @@ export const HomePages = () => {
 				result3: "}",
 				img1: "https://flexboxfroggy.com/favicon.ico",
 				icon1:
-					"https://colourlex.com/wp-content/uploads/2021/02/Emerald-green-painted-swatch.jpg",
+					"https://st3.depositphotos.com/4124697/14252/i/450/depositphotos_142522847-stock-photo-abstract-composition-color.jpg",
 				isResult: false,
 			},
 		],
@@ -355,14 +355,14 @@ export const HomePages = () => {
 							<img onClick={() => setCount(count + 1)} src={icon2} alt="icon" />
 						</div>
 					</div>
-					<div>
-						<div>
+					<div className={scss.contentsResult}>
+						<div className={scss.divLebal}>
 							{result1 ? (
 								<>
 									<p>{resultIndex.name}</p>
 									<p>{resultIndex.text}</p>
 									<p>{resultIndex.nameText}</p>
-									<div>
+									<div className={scss.formsResults}>
 										<p>{resultIndex.result1}</p>
 										<p>{resultIndex.result2}</p>
 										<p>
@@ -386,7 +386,11 @@ export const HomePages = () => {
 							{result1 === true ? (
 								<>
 									<img src={resultIndex.img1} alt="img1" />
-									<img src={resultIndex.icon1} alt="icon1" />
+									<img
+										style={{ textAlign: "end" }}
+										src={resultIndex.icon1}
+										alt="icon1"
+									/>
 								</>
 							) : null}
 						</div>
