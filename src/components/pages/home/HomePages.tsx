@@ -308,6 +308,7 @@ export const HomePages = () => {
 	const [result2, setResult2] = useState<boolean>(false);
 	const [result3, setResult3] = useState<boolean>(false);
 	const [result4, setResult4] = useState<boolean>(false);
+	const [buttonStyleResult, setButtonStyleResult] = useState<boolean>(false);
 	const [inputValueResult1, setInputValueResult1] = useState<string>("");
 	const result = LevelArray.slice(0, 8);
 	console.log(result);
@@ -343,13 +344,53 @@ export const HomePages = () => {
 		}
 	}, [count]);
 
-	useEffect(() => {
+	const inputValueIsTrue = () => {
 		if (inputValueResult1 === "flex-end") {
-			resultIndex.isResult === true;
+			setButtonStyleResult(true);
 		} else {
-			resultIndex.isResult === false;
+			setButtonStyleResult(false);
 		}
-	}, [inputValueResult1]);
+	};
+
+	// function buttonStyle() {
+
+	// 	resultIndex.isResult === true;
+	// 	// if (inputValueResult1 === "flex-end") {
+	// 	// 	resultIndex.isResult === true;
+	// 	// } else {
+	// 	// 	resultIndex.isResult === false;
+	// 	// }
+	// }
+
+	// useEffect(() => {
+	// 	if (inputValueResult1 === "flex-end") {
+	// 		buttonStyleResult === true;
+	// 	} else {
+	// 		buttonStyleResult === false;
+	// 	}
+	// }, [inputValueResult1]);
+
+	// useEffect(() => {
+	// 	if(buttonStyleResult === true) {
+	// 		resultIndex.isResult === true;
+	// 	} else if(buttonStyleResult === false) {
+	// 		resultIndex.isResult === false;
+	// 	}
+	// } , [buttonStyleResult])
+
+	if (inputValueResult1 === "flex-end") {
+		buttonStyleResult === true;
+	} else {
+		buttonStyleResult === false;
+	}
+
+	useEffect(() => {
+		if(inputValueResult1 === "flex-end") {
+			setButtonStyleResult(true)
+		} else {
+			setButtonStyleResult(false)
+		}
+	}, [inputValueResult1])
 
 	return (
 		<div className={scss.homePages}>
@@ -360,7 +401,7 @@ export const HomePages = () => {
 						<div className={scss.divHeaderButtonResult}>
 							<img onClick={() => setCount(count - 1)} src={icon} alt="icon" />
 							<p>Уровень {count} из 24</p>
-							<img onClick={() => setCount(count + 1)} src={icon2} alt="icon" />
+							<img  src={icon2} alt="icon" />
 						</div>
 					</div>
 					<div className={scss.contentsResult}>
@@ -376,25 +417,32 @@ export const HomePages = () => {
 										<div className={scss.divForm}>
 											<p className={scss.textIsInputLabel}>
 												justify-content{" "}
-												<Input
+												<input
 													value={inputValueResult1}
 													type="text"
-													setData={setInputValueResult1}
+													onChange={(e) => setInputValueResult1(e.target.value)}
 												/>
 											</p>
 										</div>
 										<div className={scss.buttonDev}>
 											<button
+												// onClick={() => setButtonStyleResult(true)}
+												// onClick={inputValueIsTrue}
+												onClick={() => {
+													buttonStyleResult === true ? setCount(count + 1) : null
+												}}
 												style={
-													resultIndex.isResult === true
+													buttonStyleResult === true
 														? { backgroundColor: "red" }
 														: { backgroundColor: "transparent" }
 												}>
 												Далее
 											</button>
-											{resultIndex.isResult === true ? (
+											{buttonStyleResult === true ? (
 												<p style={{ color: "black" }}>Hello</p>
-											) : null}
+											) : (
+												<p>Error</p>
+											)}
 										</div>
 									</div>
 								</>
